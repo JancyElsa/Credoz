@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <title>getElementById</title>  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus exercitationem eligendi et repellat deserunt veritatis obcaecati officiis corporis, dolorum, a aspernatur consectetur. Hic sapiente quos deserunt ab rerum perspiciatis at.</p>
+<img src="./img/logo.png" alt="microsoft">
+<p class="para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa distinctio neque enim nihil officia. Sequi reprehenderit nesciunt eaque, quas consequatur quibusdam, temporibus minima ab at architecto rem, quidem libero.</p>
+
+<p class="para2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa distinctio neque enim nihil officia. Sequi reprehenderit nesciunt eaque, quas consequatur quibusdam, temporibus minima ab at architecto rem, quidem libero.</p>
+<p class="para3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis culpa distinctio neque enim nihil officia. Sequi reprehenderit nesciunt eaque, quas consequatur quibusdam, temporibus minima ab at architecto rem, quidem libero.</p>
+<!-- Events -->
+<!-- onclick -->
+<p> I am onclick event</p>
+<button id="btn" onclick="changebgnColor()">click</button>
+<!-- onchange -->
+<div>
+  <select id="country" name="country" onchange="selectedCity()">
+  <option value="india">India</option>
+  <option value="united states">United States</option>
+  <option value="singapore">Singapore</option>
+  <option value="london">London</option>
+  <option value="dubai">Dubai</option>
+  </select>
+</div>
+<div>
+  <p id="slcCity"></p>
+</div>
+<!-- onmouseover -->
+<button id="btn1" onmouseover="changeColor()">click me</button>
+<!-- onmouseout -->
+<button id="btn2" onmouseout="changeBgnColor()">click meee</button>
+<!-- onkeypress -->
+<div>
+  <input type="text" id="fname" onkeypress="changeBackground()">
+</div>
+
+<script src="custom.js"></script>
+
+</body>
+</html>

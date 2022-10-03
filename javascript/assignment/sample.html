@@ -1,0 +1,107 @@
+<!-- Finding student grade -->
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+  <title>Finding student grade</title>  
+  
+</head>
+<body>
+    <div>
+        <label for="rollno">Student Roll</label>
+    <input type="number" id="rollno" name="rollno">
+    </div>
+    <div>
+        <label for="sname">Student Name</label>
+    <input type="text" id="sname" name="sname">
+</div>
+<div>
+    <label for="sclass">Student Class</label>
+    <input type="number" id="sclass" name="sclass">
+</div>
+<div>
+    <label for="ssection">Student Section</label>
+    <input type="text" id="ssection" name="ssection">
+</div>
+<div>
+    <label for="tmarks">Total Marks</label>
+    <input type="number" id="tmarks" name="tmarks">
+</div>
+<button onclick="findGrade()">Find Grade</button>
+<p id="para"></p>
+<!-- Find no of days in a month -->
+<div>
+    <label for="yr">Year</label>
+<input type="number" id="yr" name="yr">
+</div>
+<div>
+    <label for="month">Month</label>
+    <select id="month" name="month">
+    <option value="selmonth">Select Month</option>
+    <option value="January">January</option>
+    <option value="Febraury">Febraury</option>
+    <option value="March">March</option>
+    <option value="April">April</option>
+    <option value="May">May</option>
+    <option value="June">June</option>
+    <option value="July">July</option>
+    <option value="August">August</option>
+    <option value="September">September</option>
+    <option value="October">October</option>
+    <option value="November">November</option>
+    <option value="December">December</option>
+    
+    </select>
+  </div>
+  <button onclick="noOfDays()">Total days</button>
+  <p id="p"></p>
+  <!-- India state and capital vice versa in dropdown -->
+
+        <h3>India states and Capital</h3>
+        <label>States:</label>
+            <select name="state" id="state" onchange="state()">
+                <option value="selCap">Select Your State</option>
+                <option value="AN">Andaman and Nicobar Islands</option>
+                <option value="AP">Andhra Pradesh</option>
+                <option value="AR">Arunachal Pradesh</option>
+                <option value="AS">Assam</option>
+                <option value="BR">Bihar</option>
+                <option value="CH">Chandigarh</option>
+                <option value="CT">Chhattisgarh</option>
+                <option value="DN">Dadra and Nagar Haveli</option>
+                <option value="DD">Daman and Diu</option>
+                <option value="DL">Delhi</option>
+                <option value="GA">Goa</option>
+                <option value="GJ">Gujarat</option>
+                <option value="HR">Haryana</option>
+                <option value="HP">Himachal Pradesh</option>
+                <option value="JK">Jammu and Kashmir</option>
+
+            </select>
+                <!-------Capital-->
+                <label>Select Capital :</label>
+            <select name="city" id="city" onchange="city()">
+                 <option value="selCap">Select Your Capital</option>
+                 <option value="AP">Amaravati</option>
+                 <option value="AN">Port Blair</option>
+                 <option value="AR">Itanagar</option>
+                 <option value="AS">Dispur</option>
+                 <option value="BR">Patna</option>
+                 <option value="CH">Raipur</option>
+                 <option value="CT">Chandigarh</option>
+                 <option value="DN">Daman</option>
+                 <option value="DD">Daman</option>
+                 <option value="DL">New Delhi</option>
+                 <option value="GA">Kavaratti</option>
+                 <option value="GA">Panaji</option>
+                 <option value="GJ">Gandhinagar</option>
+                 <option value="HR">Chandigarh</option>
+                 <option value="HP">Shimla</option>
+                 <option value="JK">Srinagar </option>
+
+            </select>
+            <script src="main.js"></script>
+         </body>
+         
+     </html>
+
+    

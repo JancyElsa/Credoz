@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+  <title>Assignment</title>  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h3>Arithmetic operators using buttons</h3>
+    <div>
+        <label for="no1">Number 1</label>
+    <input type="text" id="no1" name="no1">
+</div>
+    <div>
+        <label for="no2">Number 2</label>
+    <input type="text" id="no2" name="no2">
+</div>
+    <div><button id="btnadd" onclick="Addition()">Add</button>
+    <button id="btnsub" onclick="Subtraction()">Sub</button>
+    <button  id="btnmul" onclick="Multiplication()">Mul</button>
+    <button id="btndiv" onclick="Division()">Div</button>
+</div>
+Result:<span id="rst"></span>
+<h3>Arithmetic operators using radio buttons</h3>
+<div>
+    <label for="no1">Number 1</label>
+<input type="text" id="no1" name="no1">
+</div>
+<div>
+    <label for="no2">Number 2</label>
+<input type="text" id="no2" name="no2">
+</div>
+<div>
+<input type="radio" id="btn" name="btn" onclick="Addition1()">Add
+<input type="radio" id="btn" name="btn" onclick="Subtraction2()">Sub
+<input type="radio" id="btn" name="btn" onclick="Multiplication3()">Mul
+<input type="radio" id="btn" name="btn" onclick="Division4()">Div
+</div>
+Result:<span id="rst1"></span>
+<h3>Arithmetic operators using Drop down list</h3>
+<div>
+    <label for="no1">Number 1</label>
+<input type="text" id="no1" name="no1">
+</div>
+<div>
+    <label for="no2">Number 2</label>
+<input type="text" id="no2" name="no2">
+</div>
+<div>
+    <select id="operators" name="operators" onchange="selectedOperator()">
+    <option value="add">Add</option>
+    <option value="sub">Sub</option>
+    <option value="mul">Mul</option>
+    <option value="div">Div</option>
+    
+    </select>
+  </div>
+  Result:<span id="rst2"></span>
+
+  <!-- calculator -->
+  <div class="calc">
+    <h3>calculator using Arithmetic operators</h3>
+    <input type="text" id="no1" name="no1">
+    <select id="operators" name="operators" onchange="selectedOperator()">
+    <option value="add">+</option>
+    <option value="sub">-</option>
+    <option value="mul">*</option>
+    <option value="div">/</option>
+    <option value="rem">%</option>
+    </select>
+    <input type="text" id="no2" name="no2">
+    =
+    <input type="text" id="no3" name="no3">
+    <button>Answer</button>
+</div>
+<script src="custom.js"></script>
+    </body>
+    </html>
